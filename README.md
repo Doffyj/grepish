@@ -25,7 +25,7 @@ make clean
 - [x] Imprimir el nombre del archivo leido.
 - [x] Imprimir la str buscada en rojo para facilitar lectura.
 - [ ] Incluir un modo para que sea o no sea case sensitive.
-- [ ] abrir todos los archivos en directorio local, a menos que se especifique uno.
+- [ ] Abrir todos los archivos en directorio local, a menos que se especifique uno.
   - [ ] Imprimir los nombres del archivo al que pertenecen los matches
 
 
