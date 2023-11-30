@@ -41,7 +41,7 @@ int	main(int argc, char **argv)
 			}
 			free(line);
 		}
-		printf("Total matching lines: %d (out of %d)\n", total, current_line);
+		printf("%s : Total matching lines: %d (out of %d)\n", argv[2], total, current_line);
 		close(fd);
 		free(to_find);
 	}
