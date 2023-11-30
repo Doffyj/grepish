@@ -21,7 +21,14 @@
 #  define BUFFER_SIZE 777
 # endif
 
+
+//printf_colors
+void	ft_print_red();
+void	ft_print_black();
+//libft
+void	ft_putchar(int c);
 int 	ft_strstr(const char *str, const char *to_find);
+//get_next_line + utils
 char	*ft_strdup(const char *s1);
 size_t	ft_strlen(const char *str);
 char	*ft_strjoin(char const *s1, char const *s2);

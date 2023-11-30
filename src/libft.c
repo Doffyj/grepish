@@ -12,6 +12,11 @@
 
 #include "grepish.h"
 
+void	ft_putchar(int c)
+{
+	write(1, &c, 1);
+}
+
 int ft_strstr(const char *str, const char *to_find)
 {
 	size_t	j;

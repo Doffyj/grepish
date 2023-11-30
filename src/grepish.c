@@ -12,6 +12,29 @@
 
 #include "grepish.h"
 
+void	ft_printlines(int  start, int length, char *line, char *to_find)
+{
+	int		i;
+
+	i = 0;
+	while (i < length)
+	{
+		ft_putchar(line[i]);
+		i++;
+	}
+	//change printf color to red
+	ft_print_red();
+	printf("%s", to_find);
+	//change printf color to black
+	ft_print_black();
+	i = start + ft_strlen(to_find);
+	while (line[i] != '\0')
+	{
+		ft_putchar(line[i]);
+		i++;
+	}
+}
+
 int	main(int argc, char **argv)
 {
 	int		fd;
@@ -36,7 +59,7 @@ int	main(int argc, char **argv)
 			current_line++;
 			if (ft_strstr(line, to_find) != -1)
 			{
-				printf("Line %d: %s",current_line, line);
+				printf("Line %d: %s",current_line, line, to_find);
 				total++;
 			}
 			free(line);
