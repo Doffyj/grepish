@@ -12,12 +12,12 @@
 
 #include "grepish.h"
 
-void	ft_printlines(int  start, char *line, char *to_find)
+void	ft_printlines(int  start, char *line, char *to_find, int current_line)
 {
 	int		i;
 
 	i = 0;
-	printf("%.*s", start, line);
+	printf("Line %d: %.*s", current_line, start, line);
 	//change printf color to red
 	ft_print_red();
 	printf("%s", to_find);
@@ -53,7 +53,7 @@ int	main(int argc, char **argv)
 			start = ft_strstr(line, to_find);
 			if (start != -1)
 			{
-				ft_printlines(start, line, to_find);
+				ft_printlines(start, line, to_find, current_line);
 				total++;
 			}
 			free(line);
