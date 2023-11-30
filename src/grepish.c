@@ -12,12 +12,12 @@
 
 #include "grepish.h"
 
-void	ft_printlines(int  start, int length, char *line, char *to_find)
+void	ft_printlines(int  start, char *line, char *to_find)
 {
 	int		i;
 
 	i = 0;
-	while (i < length)
+	while (i < start)
 	{
 		ft_putchar(line[i]);
 		i++;
@@ -39,6 +39,7 @@ int	main(int argc, char **argv)
 {
 	int		fd;
 	int		total;
+	int		start;
 	int		current_line;
 	char	*line;
 	char	*to_find;
@@ -57,9 +58,10 @@ int	main(int argc, char **argv)
 		while ((line = get_next_line(fd)) != NULL)
 		{
 			current_line++;
-			if (ft_strstr(line, to_find) != -1)
+			start = ft_strstr(line, to_find);
+			if (start != -1)
 			{
-				printf("Line %d: %s",current_line, line, to_find);
+				ft_printlines(start, line, to_find);
 				total++;
 			}
 			free(line);
