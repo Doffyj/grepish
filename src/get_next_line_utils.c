@@ -61,7 +61,7 @@ char	*ft_substr(char const *s, size_t start, size_t len)
 		return (str);
 	}
 	str = (char *)malloc(1 + len);
-	if (!str || len < 0)
+	if (!str)
 		return (0);
 	while (s[i + j] != '\0' && j < len)
 	{
