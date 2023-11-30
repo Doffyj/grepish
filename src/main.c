@@ -34,14 +34,14 @@ int	main(int argc, char **argv)
 		while ((line = get_next_line(fd)) != NULL)
 		{
 			current_line++;
-			if (ft_strstr(line, to_find) != 0)
+			if (ft_strstr(line, to_find) != -1)
 			{
-				printf("Line %d: %s\n",current_line, line);
+				printf("Line %d: %s",current_line, line);
 				total++;
 			}
 			free(line);
 		}
-		printf("Total found lines: %d\n", total);
+		printf("Total matching lines: %d (out of %d)\n", total, current_line);
 		close(fd);
 		free(to_find);
 	}

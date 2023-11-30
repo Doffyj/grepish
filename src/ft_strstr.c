@@ -32,5 +32,5 @@ int ft_strstr(const char *str, const char *to_find)
 		}
 		j++;
 	}
-	return (0);
+	return (-1);
 }
