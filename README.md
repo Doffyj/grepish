@@ -25,7 +25,7 @@ make clean
 - [ ] Imprimir el nombre del archivo leido.
 - [ ] Incluir un modo para que sea o no sea case sensitive.
 - [ ] abrir todos los archivos en directorio local, a menos que se especifique uno.
-- [ ] \Imprimis los nombres del archivo al que pertenecen los matches
+- [ ] \(Optional) Imprimis los nombres del archivo al que pertenecen los matches
 
 
 # etc
