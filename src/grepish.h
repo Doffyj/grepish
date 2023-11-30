@@ -26,7 +26,6 @@
 void	ft_print_red();
 void	ft_print_black();
 //libft
-void	ft_putchar(int c);
 int 	ft_strstr(const char *str, const char *to_find);
 //get_next_line + utils
 char	*ft_strdup(const char *s1);

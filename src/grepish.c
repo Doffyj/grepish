@@ -17,22 +17,14 @@ void	ft_printlines(int  start, char *line, char *to_find)
 	int		i;
 
 	i = 0;
-	while (i < start)
-	{
-		ft_putchar(line[i]);
-		i++;
-	}
+	printf("%.*s", start, line);
 	//change printf color to red
 	ft_print_red();
 	printf("%s", to_find);
 	//change printf color to black
 	ft_print_black();
 	i = start + ft_strlen(to_find);
-	while (line[i] != '\0')
-	{
-		ft_putchar(line[i]);
-		i++;
-	}
+	printf("%s\n", &line[i]);
 }
 
 int	main(int argc, char **argv)
