@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-SRC_DIR = src
-SRCS = $(wildcard $(SRC_DIR)/*.c)
-HEADER = grepish.h
+DIR = src
+SRCS = $(wildcard $(DIR)/*.c)
+HEADER = $(DIR)/grepish.h
 TARGET = grepish
 
 all: $(TARGET)

@@ -12,7 +12,7 @@
 
 #include "grepish.h"
 
-int	*ft_strstr(const char *str, const char *to_find)
+int ft_strstr(const char *str, const char *to_find)
 {
 	size_t	j;
 	size_t	k;

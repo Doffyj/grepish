@@ -14,12 +14,13 @@
 # define GREPISH_H
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdio.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 777
 # endif
 
-int		ft_strstr(char *c);
+int 	ft_strstr(const char *str, const char *to_find);
 char	*ft_strdup(const char *s1);
 size_t	ft_strlen(const char *str);
 char	*ft_strjoin(char const *s1, char const *s2);
