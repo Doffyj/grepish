@@ -21,6 +21,13 @@ En casi de hacer una modificación el el programa, el Makefile cuenta con una re
 make clean
 ```
 
+# to do
+- [ ] Imprimir el nombre del archivo leido.
+- [ ] Incluir un modo para que sea o no sea case sensitive.
+- [ ] abrir todos los archivos en directorio local, a menos que se especifique uno.
+- [ ] \Imprimis los nombres del archivo al que pertenecen los matches
+
+
 # etc
 
 Si deseas añadir cosas extra al programa abre una pull request y le echaré un ojo.
