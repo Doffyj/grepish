@@ -1,34 +1,37 @@
+# Other languages
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/Doffyj/grepish/blob/master/readme/README.es.md)
+
 # grepish
 
-Este programa toma los proyectos [get_next_line](https://github.com/Doffyj/42-cursus/tree/master/get_next_line) y ft_strstr (de la piscina, en el cursus hacemos ft_strnstr) de 42 y los adapta para crear un programa que simule el funcionamiento de [grep](https://man7.org/linux/man-pages/man1/grep.1.html).
+This program makes use of 42 school's common-core projects [get_next_line](https://github.com/Doffyj/42-cursus/tree/master/get_next_line) and ft_strstr (made in the pool, the one in Libft is ft_strnstr) and adapts them to create a program that simulates the behavior of [grep](https://man7.org/linux/man-pages/man1/grep.1.html).
 En la versión actual el programa es case sensitive y sólo busca en el archivo especificado en el directorio actual.
 Para futuras versiones intentaré hacer que sea más parecido al original
 
-# Compilar
+# Compiling
 
-Dentro del repositorio se debe abrir una terminal y poner
+Inside the repository, you must open a terminal and type
 ```
 make
 ```
-Se creará el archivo *grepish*, el cual lo compilaremos con los siguientes argumentos:
+The grepish file will be created, which we will compile with the following arguments:
 ```
 ./grepish str file
 ```
-Siendo *str* la cadena de carácteres que deseamos encontrar y *file* el archivo donde se realizará la búsqueda.
+Where str is the string of characters we want to find and file is the file where the search will be performed.
 
-En casi de hacer una modificación el el programa, el Makefile cuenta con una regla *clean* que elimina el archivo compilado, simplemente poner:
+In the event of making a modification to the program, the Makefile has a clean rule that removes the compiled file, simply type:
 ```
 make clean
 ```
 
 # to do
-- [x] Imprimir el nombre del archivo leido.
-- [x] Imprimir la str buscada en rojo para facilitar lectura.
-- [ ] Incluir un modo para que sea o no sea case sensitive.
-- [ ] Abrir todos los archivos en directorio local, a menos que se especifique uno.
-  - [ ] Imprimir los nombres del archivo al que pertenecen los matches
+- [x] Print the name of the file read.
+- [x] Print the searched string in red to facilitate reading.
+- [ ] Include a mode to make it case-sensitive or not.
+- [ ] Open all files in the local directory, unless one is specified.
+  - [ ] Print the names of the files to which the matches belong.
 
 
 # etc
 
-Si deseas añadir cosas extra al programa abre una pull request y le echaré un ojo.
+If you want to add extra things to the program, open a pull request and I'll take a look.
