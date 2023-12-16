@@ -4,8 +4,9 @@
 # grepish
 
 This program makes use of 42 school's common-core projects [get_next_line](https://github.com/Doffyj/42-cursus/tree/master/get_next_line) and ft_strstr (made in the pool, the one in Libft is ft_strnstr) and adapts them to create a program that simulates the behavior of [grep](https://man7.org/linux/man-pages/man1/grep.1.html).
-En la versión actual el programa es case sensitive y sólo busca en el archivo especificado en el directorio actual.
-Para futuras versiones intentaré hacer que sea más parecido al original
+
+In the current version, the program is case sensitive and only searches the file specified in the current directory.
+For future versions, I will try to make it more similar to the original.
 
 # Compiling
 
