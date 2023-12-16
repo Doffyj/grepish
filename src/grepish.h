@@ -21,6 +21,9 @@
 #  define BUFFER_SIZE 777
 # endif
 
+//arg numb
+int	three_args(int argc, char **argv);
+int two_args(int argc, char **argv);
 
 //printf_colors
 void	ft_print_red();
